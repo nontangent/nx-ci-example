@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/nontangent/nx-ci-example/compare/v0.1.0...v0.1.1) (2022-01-24)
+
+
+### Features
+
+* initial commit ([dec5d93](https://github.com/nontangent/nx-ci-example/commit/dec5d93f69b2e674ff3f852a6684e95ef474542e))
+
 ## [0.1.0](https://github.com/nontangent/nx-ci-example/compare/v0.0.3...v0.1.0) (2022-01-24)
 
 
