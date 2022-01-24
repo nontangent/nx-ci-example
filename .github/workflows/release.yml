@@ -14,5 +14,7 @@ jobs:
           node-version: 16.x
       - run: npm ci
       - env:
+          # GITHUB Actionsが提供するトークンだとDeployの方が発火しないので、
+          # repo権限を有効にしたPERSONAL_ACCESS_TOKENを用いる必要がある
           GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
         run: npx semantic-release
