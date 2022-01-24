@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Build Application
-        run: npx nx build elements
+        run: npx nx build elements --base-href=/elements/${{ github.event.release.tag_name }}/
 
       - name: Echo Version
         run: echo ${{ github.event.release.tag_name }}
