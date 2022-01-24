@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/nontangent/nx-ci-example/compare/v1.3.5...v1.4.0) (2022-01-24)
+
+
+### Features
+
+* add aws secctings ([40f5573](https://github.com/nontangent/nx-ci-example/commit/40f5573e7987efb22b5cc58c6357687cfe8c2270))
+
 ## [1.3.5](https://github.com/nontangent/nx-ci-example/compare/v1.3.4...v1.3.5) (2022-01-24)
 
 
