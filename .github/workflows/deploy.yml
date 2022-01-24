@@ -16,21 +16,21 @@ jobs:
         with:
           node-version: 16.x
 
-      # - name: Setup AWS Credentials
-      #   run: |
-      #     mkdir ~/.aws
-      #     echo "[civ6_prod]
-      #     aws_access_key_id = ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     aws_secret_access_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}" > ~/.aws/credentials
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
 
       - name: Install Packages
         run: npm ci
 
       - name: Build Application
-        run: npx nx build app
+        run: npx nx build elements
 
       - name: Echo Version
         run: echo ${{ github.event.release.tag_name }}
 
-      # - name: Deploy Application
-      #   run: aws s3 cp --recursive s3://${{ secrets.AWS_S3_BUCKET_NAME}}/public/elements/
+      - name: Deploy Application
+        run: aws s3 cp --recursive dist/apps/elements s3://${{ secrets.AWS_S3_BUCKET_NAME}}/public/elements/${{ github.event.release.tag_name }}
