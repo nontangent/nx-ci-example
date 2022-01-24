@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/nontangent/nx-ci-example/compare/v1.3.0...v1.3.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* test ([35249a4](https://github.com/nontangent/nx-ci-example/commit/35249a4f2e3fe2f3775fa547678cc675b5d46243))
+
 # [1.3.0](https://github.com/nontangent/nx-ci-example/compare/v1.2.0...v1.3.0) (2022-01-24)
 
 
