@@ -26,11 +26,8 @@ jobs:
       - name: Install Packages
         run: npm ci
 
-      - name: Install Nx CLI
-        run: npm i -g @nrwl/nx@latest
-
       - name: Build Application
-        run: nx build app
+        run: npx nx build app
 
       - name: Echo Version
         run: echo ${{ github.event.release.tag_name }}
