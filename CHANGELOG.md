@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/nontangent/nx-ci-example/compare/v1.4.0...v1.4.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* add base href ([5ffb01b](https://github.com/nontangent/nx-ci-example/commit/5ffb01b59420968096a81e277effa7a6929acc8d))
+
 # [1.4.0](https://github.com/nontangent/nx-ci-example/compare/v1.3.5...v1.4.0) (2022-01-24)
 
 
