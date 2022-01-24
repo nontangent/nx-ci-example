@@ -14,5 +14,5 @@ jobs:
           node-version: 16.x
       - run: npm ci
       - env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
         run: npx semantic-release
