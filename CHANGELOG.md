@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/nontangent/nx-ci-example/compare/v1.3.1...v1.3.2) (2022-01-24)
+
+
+### Bug Fixes
+
+* add "@semantic-release/npm", ([ed5248d](https://github.com/nontangent/nx-ci-example/commit/ed5248dc5a44716ae0a2ce598a30a11cb66d8d74))
+
 ## [1.3.1](https://github.com/nontangent/nx-ci-example/compare/v1.3.0...v1.3.1) (2022-01-24)
 
 
