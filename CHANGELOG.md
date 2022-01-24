@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/nontangent/nx-ci-example/compare/v1.3.4...v1.3.5) (2022-01-24)
+
+
+### Bug Fixes
+
+* use npx ([8e53cb9](https://github.com/nontangent/nx-ci-example/commit/8e53cb968fb303fb53745c3043f2afd154909091))
+
 ## [1.3.4](https://github.com/nontangent/nx-ci-example/compare/v1.3.3...v1.3.4) (2022-01-24)
 
 
