@@ -1,19 +1,36 @@
 name: Deploy
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types:
+      - published
 jobs:
-  de:
+  deploy:
     name: Deploy
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - run: npm ci
-      - run: nx build app
-      # - env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: npx semantic-release
+
+      # - name: Setup AWS Credentials
+      #   run: |
+      #     mkdir ~/.aws
+      #     echo "[civ6_prod]
+      #     aws_access_key_id = ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     aws_secret_access_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}" > ~/.aws/credentials
+
+      - name: Install Packages
+        run: npm ci
+
+      - name: Build Application
+        run: nx build app
+
+      - name: Echo Version
+        run: echo ${{ github.event.release.tag_name }}
+
+      # - name: Deploy Application
+      #   run: aws s3 cp --recursive s3://${{ secrets.AWS_S3_BUCKET_NAME}}/public/elements/
