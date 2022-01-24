@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/nontangent/nx-ci-example/compare/v1.2.0...v1.3.0) (2022-01-24)
+
+
+### Bug Fixes
+
+* remove release node from commit message ([80cfc2c](https://github.com/nontangent/nx-ci-example/commit/80cfc2c0314cff62cd2906b86a6c2031a2de7dbf))
+
+
+### Features
+
+* add deploy flow ([cdbd745](https://github.com/nontangent/nx-ci-example/commit/cdbd745abaf8ab8a3a16045317eff08261c5a74f))
+* add semantic version plugins ([d0ace27](https://github.com/nontangent/nx-ci-example/commit/d0ace27ffe546250ad62b49a074d4e91de64d6bd))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
